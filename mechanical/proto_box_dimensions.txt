@@ -1,0 +1,15 @@
+model b pi - 85 x 56mm
+4mm walls
+7.4mm rj45 connector
+printer tolerances 300um - .3mm?
+total x,y = 100.7 x 64.3
+
+z clearance 13mm for plugs
+16mm relay
+4mm walls
+.3mm tolerance
+PCB ~= 2mm
+plugs - 27mm at PCB (16mm relay) +/- 1mm
+	plug female size - 25x25mm at 47.3 - 4wall - 1 clearance = 42.3mm -> centered around 29.8mm
+	plug male size - 25 is fine across. Z should be 22mm
+total height - 47.3mm

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Nicks_Ego\Documents\mine\side_projects\side_projects\power_control_phone\coffee_pot_app\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1a57337a520bf40b9ad1e074cb780527dffa1aac">
+        <dex dex="C:\Users\Nicks_Ego\Documents\mine\side_projects\side_projects\power_control_phone\coffee_pot_app\Application\build\intermediates\pre-dexed\debug\classes-5e0f05a296243bfe3b4204a05d51f47b1f925bdf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nicks_Ego\Documents\mine\side_projects\side_projects\power_control_phone\coffee_pot_app\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="076c7d9e22cc325b8008ff799e0c06dfb8eefdf3">
+        <dex dex="C:\Users\Nicks_Ego\Documents\mine\side_projects\side_projects\power_control_phone\coffee_pot_app\Application\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-afe3f4a1b4ee960d266f1ae3ab635b82396dc4e4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nicks_Ego\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\Nicks_Ego\Documents\mine\side_projects\side_projects\power_control_phone\coffee_pot_app\Application\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-4b6fe05c64a278162870a3155cbdc4134f003093.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nicks_Ego\Documents\mine\side_projects\side_projects\power_control_phone\coffee_pot_app\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="C:\Users\Nicks_Ego\Documents\mine\side_projects\side_projects\power_control_phone\coffee_pot_app\Application\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-25a8fe3d70f60c0a4cd96674b5d4d96fd43cf04e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nicks_Ego\Documents\mine\side_projects\side_projects\power_control_phone\coffee_pot_app\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d96886efea7cc74fbb3abd0e3b51d5638fc57be0">
+        <dex dex="C:\Users\Nicks_Ego\Documents\mine\side_projects\side_projects\power_control_phone\coffee_pot_app\Application\build\intermediates\pre-dexed\debug\classes-649d0eea9bb2546bddb63fec863f3cfe365e43ed.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nicks_Ego\Documents\mine\side_projects\side_projects\power_control_phone\coffee_pot_app\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\Nicks_Ego\Documents\mine\side_projects\side_projects\power_control_phone\coffee_pot_app\Application\build\intermediates\pre-dexed\debug\classes-e3c4e93a5b28bea95dc17e6fa3b27ddad629ca04.jar" />
+    </item>
+
+</items>
