@@ -23,17 +23,17 @@ import java.util.HashMap;
  */
 public class SampleGattAttributes {
     private static HashMap<String, String> attributes = new HashMap();
-    public static String CLIENT_CHARACTERISTIC_CONFIG = "00002902-0000-1000-8000-00805f9b34fb";
-    public static String power_control_conf = "0000ffe0-0000-1000-8000-00805f9b34fb";
-    public static String power_control_tx_rx = "0000ffe1-0000-1000-8000-00805f9b34fb";
+    public static String CLIENT_CHARACTERISTIC_CONFIG = "00002902-0000-1000-8000-00805f9b34f0";
+    public static String power_control_conf = "0000ffe0-0000-1000-8000-00805f9b34f1";
+    public static String power_control_tx_rx = "0000ffe1-0000-1000-8000-00805f9b34f2";
 
     static {
         // Sample Services.
-        attributes.put("0000ffe0-0000-1000-8000-00805f9b34fb", "Power Control");
-        attributes.put("00001800-0000-1000-8000-00805f9b34fb", "Device Information Service");
+        attributes.put("0000ffe0-0000-1000-8000-00805f9b34f0", "Power Control");
+        attributes.put("00001800-0000-1000-8000-00805f9b34f0", "Device Information Service");
         // Sample Characteristics.
         attributes.put(power_control_tx_rx,"tx rx data");
-        attributes.put("00002a29-0000-1000-8000-00805f9b34fb", "Manufacturer Name String");
+        attributes.put("00002a29-0000-1000-8000-00805f9b34f1", "Manufacturer Name String");
     }
 
     public static String lookup(String uuid, String defaultName) {
