@@ -8542,8 +8542,8 @@ temperature compensated, 6,2 V</description>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME4" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="U$12" library="nicks_parts" deviceset="SML-P11UTT86" device=""/>
-<part name="U$13" library="nicks_parts" deviceset="SML-P11UTT86" device=""/>
+<part name="U$6" library="nicks_parts" deviceset="SML-P11UTT86" device=""/>
+<part name="U$5" library="nicks_parts" deviceset="SML-P11UTT86" device=""/>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
 <part name="C13" library="eagle-ltspice" deviceset="C" device="C0603">
@@ -8578,7 +8578,7 @@ temperature compensated, 6,2 V</description>
 <attribute name="SIZE" value="0603"/>
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="U$1" library="nicks_parts" deviceset="2450AT42B100E" device=""/>
+<part name="U$4" library="nicks_parts" deviceset="2450AT42B100E" device=""/>
 <part name="U$2" library="nicks_parts" deviceset="CX3225SB24000D0FFJCC" device=""/>
 <part name="U1" library="PSoC4-BLE" deviceset="CY8C4247LQI-BL473" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -8713,8 +8713,8 @@ acts as sub if not there.</text>
 <instance part="GND37" gate="1" x="45.72" y="-116.84"/>
 <instance part="FRAME4" gate="G$1" x="-93.98" y="-124.46"/>
 <instance part="FRAME4" gate="G$2" x="78.74" y="-124.46"/>
-<instance part="U$12" gate="G$1" x="-53.34" y="-109.22" rot="R90"/>
-<instance part="U$13" gate="G$1" x="-53.34" y="-93.98" rot="R90"/>
+<instance part="U$6" gate="G$1" x="-53.34" y="-109.22" rot="R90"/>
+<instance part="U$5" gate="G$1" x="-53.34" y="-93.98" rot="R90"/>
 <instance part="GND41" gate="1" x="109.22" y="58.42"/>
 <instance part="GND46" gate="1" x="119.38" y="58.42"/>
 <instance part="C13" gate="G$1" x="119.38" y="10.16">
@@ -8749,7 +8749,7 @@ acts as sub if not there.</text>
 <attribute name="POWER_RAT" x="-35.56" y="-101.6" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="-35.56" y="-104.14" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="154.94" y="76.2"/>
+<instance part="U$4" gate="G$1" x="154.94" y="76.2"/>
 <instance part="U$2" gate="G$1" x="38.1" y="-93.98"/>
 <instance part="U1" gate="G$1" x="66.04" y="25.4"/>
 <instance part="U1" gate="G$2" x="-58.42" y="17.78"/>
@@ -9091,19 +9091,19 @@ acts as sub if not there.</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$12" gate="G$1" pin="2"/>
+<pinref part="U$6" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$13" gate="G$1" pin="2"/>
+<pinref part="U$5" gate="G$1" pin="2"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="1"/>
+<pinref part="U$4" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="73.66" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="73.66" x2="144.78" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="L2" gate="G$1" pin="2"/>
@@ -9199,8 +9199,8 @@ acts as sub if not there.</text>
 <wire x1="-58.42" y1="-109.22" x2="-60.96" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="-109.22" x2="-60.96" y2="-99.06" width="0.1524" layer="91"/>
 <label x="-76.2" y="-99.06" size="1.778" layer="95"/>
-<pinref part="U$12" gate="G$1" pin="1"/>
-<pinref part="U$13" gate="G$1" pin="1"/>
+<pinref part="U$6" gate="G$1" pin="1"/>
+<pinref part="U$5" gate="G$1" pin="1"/>
 <junction x="-60.96" y="-99.06"/>
 </segment>
 </net>

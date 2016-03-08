@@ -8,9 +8,9 @@
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="12" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="3" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -23,9 +23,9 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="9" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="8" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="0" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="13" fill="5" visible="yes" active="yes"/>
@@ -1713,8 +1713,8 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$12" library="nicks_parts" package="SML-P11UTT86" value="SML-P11UTT86" x="24.11" y="32.55" smashed="yes" rot="R90"/>
-<element name="U$13" library="nicks_parts" package="SML-P11UTT86" value="SML-P11UTT86" x="28.19" y="32.48" smashed="yes" rot="R90"/>
+<element name="U$6" library="nicks_parts" package="SML-P11UTT86" value="SML-P11UTT86" x="24.11" y="32.55" smashed="yes" rot="R90"/>
+<element name="U$5" library="nicks_parts" package="SML-P11UTT86" value="SML-P11UTT86" x="28.19" y="32.48" smashed="yes" rot="R90"/>
 <element name="C13" library="eagle-ltspice" package="C0603" value="" x="2.76" y="24.91" smashed="yes" rot="R90">
 <attribute name="SPICEMODEL" value="NONE" x="2.76" y="24.91" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SIZE" value="0603" x="2.76" y="24.91" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1763,7 +1763,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="22.519" y="27.03" size="0.7" layer="25"/>
 <attribute name="VALUE" x="21.169" y="29.612" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="U$1" library="nicks_parts" package="2450AT42B100E" value="2450AT42B100E" x="1.8" y="3.9" smashed="yes" rot="R270"/>
+<element name="U$4" library="nicks_parts" package="2450AT42B100E" value="2450AT42B100E" x="1.8" y="3.9" smashed="yes" rot="R270"/>
 <element name="U$2" library="nicks_parts" package="CX3225SB24000D0FFJCC" value="CX3225SB24000D0FFJCC" x="9.23" y="16.9" smashed="yes" rot="R270"/>
 <element name="U1" library="PSoC4-BLE" package="JEDEC_MO-248_QFN-56-7MMX7MM" value="CY8C4247LQI-BL473" x="13.26" y="25.84" smashed="yes">
 <attribute name="NAME" x="9.025" y="29.859" size="0.7" layer="25"/>
@@ -2025,7 +2025,6 @@ design rules under a new name.</description>
 <wire x1="15.7658" y1="17.8206" x2="14.125" y2="16.1798" width="0.508" layer="1"/>
 <wire x1="14.125" y1="16.1798" x2="14.1224" y2="16.1798" width="0.508" layer="1"/>
 <contactref element="U$3" pad="P$2"/>
-<wire x1="25.32" y1="23.73" x2="40.1828" y2="29.1084" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SWD_CLK">
 <contactref element="U1" pad="27"/>
@@ -2104,19 +2103,19 @@ design rules under a new name.</description>
 <wire x1="15.885" y1="30.871" x2="17.531" y2="30.871" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="U$12" pad="P$1"/>
+<contactref element="U$6" pad="P$1"/>
 <contactref element="R2" pad="1"/>
 <wire x1="21.15" y1="30.17" x2="22.38" y2="30.17" width="0.5588" layer="1"/>
 <wire x1="22.38" y1="30.17" x2="24.11" y2="31.9" width="0.5588" layer="1"/>
 </signal>
 <signal name="N$3">
-<contactref element="U$13" pad="P$1"/>
+<contactref element="U$5" pad="P$1"/>
 <contactref element="R1" pad="1"/>
 <wire x1="21.13" y1="27.58" x2="23.94" y2="27.58" width="0.5588" layer="1"/>
 <wire x1="23.94" y1="27.58" x2="28.19" y2="31.83" width="0.5588" layer="1"/>
 </signal>
 <signal name="N$4">
-<contactref element="U$1" pad="P$1"/>
+<contactref element="U$4" pad="P$1"/>
 <contactref element="L2" pad="2"/>
 <wire x1="1.8" y1="6.15" x2="1.8" y2="7.35" width="0.5588" layer="1"/>
 <wire x1="1.8" y1="7.35" x2="2.5" y2="8.05" width="0.5588" layer="1"/>
@@ -2187,8 +2186,8 @@ design rules under a new name.</description>
 <wire x1="19.16" y1="24.782" x2="18.415" y2="25.527" width="0.4572" layer="1"/>
 <wire x1="16.76" y1="26.04" x2="17.902" y2="26.04" width="0.2032" layer="1"/>
 <wire x1="17.902" y1="26.04" x2="18.415" y2="25.527" width="0.2032" layer="1"/>
-<contactref element="U$13" pad="P$2"/>
-<contactref element="U$12" pad="P$2"/>
+<contactref element="U$5" pad="P$2"/>
+<contactref element="U$6" pad="P$2"/>
 <via x="26.035" y="33.401" extent="1-16" drill="0.6096"/>
 <wire x1="24.11" y1="33.2" x2="25.834" y2="33.2" width="0.4572" layer="1"/>
 <wire x1="25.834" y1="33.2" x2="26.035" y2="33.401" width="0.4572" layer="1"/>
@@ -2224,6 +2223,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="XRST">
 <contactref element="U1" pad="4"/>
+<contactref element="U$3" pad="P$3"/>
+<via x="8.4328" y="26.6954" extent="1-16" drill="0.6096"/>
+<wire x1="9.76" y1="27.24" x2="8.9774" y2="27.24" width="0.2032" layer="1"/>
+<wire x1="8.9774" y1="27.24" x2="8.4328" y2="26.6954" width="0.2032" layer="1"/>
+<wire x1="37.6428" y1="29.1084" x2="35.9664" y2="30.7848" width="0.2032" layer="16"/>
+<wire x1="35.9664" y1="30.7848" x2="21.082" y2="30.7848" width="0.2032" layer="16"/>
+<wire x1="21.082" y1="30.7848" x2="16.4592" y2="26.162" width="0.2032" layer="16"/>
+<wire x1="16.4592" y1="26.162" x2="8.9662" y2="26.162" width="0.2032" layer="16"/>
+<wire x1="8.9662" y1="26.162" x2="8.4328" y2="26.6954" width="0.2032" layer="16"/>
 </signal>
 <signal name="UART_RX">
 <contactref element="U1" pad="34"/>

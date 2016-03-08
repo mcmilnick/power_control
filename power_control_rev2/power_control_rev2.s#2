@@ -8590,7 +8590,7 @@ temperature compensated, 6,2 V</description>
 <part name="D1" library="diode" deviceset="1N821" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="T1" library="transistor" deviceset="2N2222" device=""/>
-<part name="U$9" library="nicks_parts" deviceset="G6E-134P" device=""/>
+<part name="U$7" library="nicks_parts" deviceset="G6E-134P" device=""/>
 <part name="FRAME2" library="frames" deviceset="DINA5_L" device=""/>
 <part name="C5" library="eagle-ltspice" deviceset="C" device="C0402">
 <attribute name="CAPACITANCE" value=".1uF"/>
@@ -9230,6 +9230,7 @@ acts as sub if not there.</text>
 <text x="35.56" y="86.36" size="3.048" layer="91">Relay</text>
 <text x="48.26" y="-17.78" size="2.794" layer="91">Power Controller</text>
 <text x="96.52" y="-10.16" size="1.778" layer="91">Rev 2</text>
+<text x="5.08" y="15.24" size="1.778" layer="91">Axial</text>
 </plain>
 <instances>
 <instance part="R3" gate="G$1" x="10.16" y="22.86">
@@ -9238,7 +9239,7 @@ acts as sub if not there.</text>
 <instance part="D1" gate="1" x="15.24" y="50.8" rot="R90"/>
 <instance part="GND4" gate="1" x="35.56" y="7.62"/>
 <instance part="T1" gate="G$1" x="33.02" y="22.86"/>
-<instance part="U$9" gate="G$1" x="43.18" y="50.8"/>
+<instance part="U$7" gate="G$1" x="43.18" y="50.8"/>
 <instance part="FRAME2" gate="G$1" x="-45.72" y="-30.48"/>
 </instances>
 <busses>
@@ -9251,7 +9252,7 @@ acts as sub if not there.</text>
 <wire x1="15.24" y1="40.64" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="27.94" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="C"/>
-<pinref part="U$9" gate="G$1" pin="1"/>
+<pinref part="U$7" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="40.64" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
 <junction x="35.56" y="40.64"/>
 </segment>
@@ -9282,14 +9283,14 @@ acts as sub if not there.</text>
 <label x="66.04" y="71.12" size="1.778" layer="95"/>
 <wire x1="60.96" y1="58.42" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="71.12" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="7"/>
+<pinref part="U$7" gate="G$1" pin="7"/>
 <wire x1="55.88" y1="58.42" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AC_MAINS_+_POST" class="0">
 <segment>
 <label x="66.04" y="12.7" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$9" gate="G$1" pin="12"/>
+<pinref part="U$7" gate="G$1" pin="12"/>
 <wire x1="66.04" y1="43.18" x2="66.04" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="43.18" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 </segment>
@@ -9308,7 +9309,7 @@ acts as sub if not there.</text>
 <wire x1="15.24" y1="53.34" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
 <junction x="15.24" y="60.96"/>
 <label x="-12.7" y="60.96" size="1.778" layer="95"/>
-<pinref part="U$9" gate="G$1" pin="6"/>
+<pinref part="U$7" gate="G$1" pin="6"/>
 <wire x1="35.56" y1="55.88" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>

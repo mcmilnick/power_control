@@ -1267,18 +1267,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 &lt;/tr&gt;
 &lt;/table&gt;</description>
 <packages>
-<package name="L1812">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="-1.4732" y1="1.6002" x2="1.4732" y2="1.6002" width="0.1016" layer="51"/>
-<wire x1="-1.4478" y1="-1.6002" x2="1.4732" y2="-1.6002" width="0.1016" layer="51"/>
-<smd name="1" x="-1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
-<smd name="2" x="1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.3876" y1="-1.651" x2="-1.4376" y2="1.649" layer="51"/>
-<rectangle x1="1.4478" y1="-1.651" x2="2.3978" y2="1.649" layer="51"/>
-</package>
 <package name="0204V">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 type 0204, grid 2.5 mm</description>
@@ -1333,6 +1321,14 @@ type 0204, grid 2.5 mm</description>
 <pad name="12" x="-3.81" y="-6.4" drill="0.6"/>
 <pad name="7" x="-3.81" y="6.3" drill="0.6"/>
 <rectangle x1="-1" y1="-8" x2="1" y2="-7" layer="21"/>
+</package>
+<package name="1210_INDUCTOR">
+<wire x1="1.525" y1="-1.2" x2="-1.525" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-1.525" y1="-1.2" x2="-1.525" y2="1.2" width="0.127" layer="21"/>
+<wire x1="-1.525" y1="1.2" x2="1.525" y2="1.2" width="0.127" layer="21"/>
+<wire x1="1.525" y1="1.2" x2="1.525" y2="-1.2" width="0.127" layer="21"/>
+<smd name="P$1" x="-1.1" y="0" dx="1.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$2" x="1.1" y="0" dx="1.3" dy="0.5" layer="1" rot="R90"/>
 </package>
 </packages>
 </library>
@@ -1521,6 +1517,23 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <pad name="P$3" x="0" y="1.27" drill="1.02"/>
 <pad name="P$4" x="2.54" y="1.27" drill="1.02"/>
 <pad name="P$5" x="5.08" y="1.27" drill="1.02" shape="square"/>
+</package>
+</packages>
+</library>
+<library name="testpad">
+<description>&lt;b&gt;Test Pins/Pads&lt;/b&gt;&lt;p&gt;
+Cream on SMD OFF.&lt;br&gt;
+new: Attribute TP_SIGNAL_NAME&lt;br&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="B1,27">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.0024" layer="37"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.0024" layer="37"/>
+<smd name="TP" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.635" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.635" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
 </packages>
 </library>
@@ -1735,18 +1748,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="5.569" y="14.085" size="0.7" layer="25"/>
 <attribute name="VALUE" x="2.775" y="12.815" size="1.27" layer="27"/>
 </element>
-<element name="L2" library="rcl" package="L1812" value="" x="2.5" y="10" smashed="yes" rot="R270">
-<attribute name="SIZE" value="1812" x="2.5" y="10" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="INDUCTANCE" value="4.7nH" x="2.5" y="10" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="4.913" y="9.492" size="0.7" layer="25" rot="R270"/>
-<attribute name="VALUE" x="-0.675" y="11.905" size="1.27" layer="27" rot="R270"/>
-</element>
-<element name="L1" library="rcl" package="L1812" value="" x="2.74" y="19.33" smashed="yes" rot="R270">
-<attribute name="SIZE" value="1812" x="2.74" y="19.33" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="INDUCTANCE" value="1.8nH" x="2.74" y="19.33" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="5.642" y="17.119" size="0.7" layer="25" rot="R90"/>
-<attribute name="VALUE" x="-0.435" y="21.235" size="1.27" layer="27" rot="R270"/>
-</element>
 <element name="R2" library="adafruit" package="R0603" value="" x="20.3" y="30.17" smashed="yes" rot="R180">
 <attribute name="RESISTANCE" value="560" x="20.3" y="30.17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SIZE" value="0603" x="20.3" y="30.17" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1769,10 +1770,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="9.025" y="29.859" size="0.7" layer="25"/>
 <attribute name="VALUE" x="10.06" y="25.44" size="0.7" layer="27"/>
 </element>
-<element name="R3" library="rcl" package="0204V" value="" x="20.0868" y="21.6672" smashed="yes">
-<attribute name="RES" value="1.5k" x="6.1268" y="27.6872" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="19.4772" y="19.6606" size="0.7" layer="25" ratio="10"/>
-<attribute name="VALUE" x="17.9532" y="19.3558" size="1.27" layer="27" ratio="10"/>
+<element name="R3" library="rcl" package="0204V" value="" x="19.2232" y="21.464" smashed="yes">
+<attribute name="RES" value="1.5k" x="5.2632" y="27.484" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="18.6136" y="19.4574" size="0.7" layer="25" ratio="10"/>
+<attribute name="VALUE" x="17.0896" y="19.1526" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="D1" library="diode" package="DO35Z10" value="1N821" x="21.016" y="13.454" smashed="yes">
 <attribute name="NAME" x="19.619" y="15.994" size="0.7" layer="25" ratio="10"/>
@@ -1913,17 +1914,31 @@ design rules under a new name.</description>
 <attribute name="NAME" x="19.182" y="32.41" size="0.7" layer="25" rot="R90"/>
 <attribute name="VALUE" x="19.436" y="30.886" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C4" library="eagle-ltspice" package="C0402" value="" x="19.81" y="23.61" smashed="yes">
-<attribute name="SPICEMODEL" value="NONE" x="19.81" y="23.61" size="1.778" layer="27" display="off"/>
-<attribute name="SIZE" value="0402" x="19.81" y="23.61" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="16V" x="19.81" y="23.61" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="19.81" y="23.61" size="1.778" layer="27" display="off"/>
-<attribute name="CAPACITANCE" value="1uF" x="19.81" y="23.61" size="1.778" layer="27" display="off"/>
-<attribute name="RATING" value="X5R" x="19.81" y="23.61" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="21.969" y="22.467" size="0.7" layer="25"/>
-<attribute name="VALUE" x="19.175" y="21.705" size="1.27" layer="27"/>
+<element name="C4" library="eagle-ltspice" package="C0402" value="" x="20.2926" y="23.7116" smashed="yes">
+<attribute name="SPICEMODEL" value="NONE" x="20.2926" y="23.7116" size="1.778" layer="27" display="off"/>
+<attribute name="SIZE" value="0402" x="20.2926" y="23.7116" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="16V" x="20.2926" y="23.7116" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="20.2926" y="23.7116" size="1.778" layer="27" display="off"/>
+<attribute name="CAPACITANCE" value="1uF" x="20.2926" y="23.7116" size="1.778" layer="27" display="off"/>
+<attribute name="RATING" value="X5R" x="20.2926" y="23.7116" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="22.4516" y="22.5686" size="0.7" layer="25"/>
+<attribute name="VALUE" x="19.6576" y="21.8066" size="1.27" layer="27"/>
 </element>
 <element name="U$3" library="pedal_rep" package="5XHEADER" value="SAMTEC1X5" x="37.6428" y="30.3784" rot="R180"/>
+<element name="U$1" library="nicks_parts" package="1210_INDUCTOR" value="1210_INDUCTOR" x="2.6162" y="20.2692" rot="R270">
+<attribute name="INDUCTANCE" value="1.8nH" x="2.6162" y="20.2692" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SIZE" value="1210" x="2.6162" y="20.2692" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="U$8" library="nicks_parts" package="1210_INDUCTOR" value="1210_INDUCTOR" x="2.0828" y="10.3124" rot="R270">
+<attribute name="SIZE" value="1210" x="2.0828" y="10.3124" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="INDUCTANCE" value="4.7nH" x="2.0828" y="10.3124" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="TP1" library="testpad" package="B1,27" value="TPB1,27" x="22.225" y="17.2212">
+<attribute name="TP_SIGNAL_NAME" value="" x="22.225" y="17.2212" size="1.778" layer="27" display="off"/>
+</element>
+<element name="TP2" library="testpad" package="B1,27" value="TPB1,27" x="24.257" y="17.3482">
+<attribute name="TP_SIGNAL_NAME" value="" x="24.257" y="17.3482" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1987,11 +2002,7 @@ design rules under a new name.</description>
 <via x="16.383" y="33.274" extent="1-16" drill="0.6096"/>
 <wire x1="16.383" y1="33.274" x2="16.383" y2="32.595" width="0.4572" layer="1"/>
 <wire x1="16.383" y1="32.595" x2="15.738" y2="31.95" width="0.4572" layer="1"/>
-<via x="21.971" y="24.003" extent="1-16" drill="0.6096"/>
-<wire x1="20.46" y1="23.61" x2="21.578" y2="23.61" width="0.4572" layer="1"/>
-<wire x1="21.578" y1="23.61" x2="21.971" y2="24.003" width="0.4572" layer="1"/>
-<wire x1="21.476" y1="25.323" x2="21.971" y2="24.828" width="0.4572" layer="1"/>
-<wire x1="21.971" y1="24.828" x2="21.971" y2="24.003" width="0.4572" layer="1"/>
+<via x="22.5552" y="24.0792" extent="1-16" drill="0.6096"/>
 <wire x1="9.76" y1="25.24" x2="12.66" y2="25.24" width="0.2032" layer="1"/>
 <wire x1="12.66" y1="25.24" x2="13.26" y2="25.84" width="0.2032" layer="1"/>
 <via x="11.811" y="24.384" extent="1-16" drill="0.6096"/>
@@ -2025,6 +2036,10 @@ design rules under a new name.</description>
 <wire x1="15.7658" y1="17.8206" x2="14.125" y2="16.1798" width="0.508" layer="1"/>
 <wire x1="14.125" y1="16.1798" x2="14.1224" y2="16.1798" width="0.508" layer="1"/>
 <contactref element="U$3" pad="P$2"/>
+<wire x1="20.9426" y1="23.7116" x2="22.1876" y2="23.7116" width="0.7112" layer="1"/>
+<wire x1="22.1876" y1="23.7116" x2="22.5552" y2="24.0792" width="0.7112" layer="1"/>
+<wire x1="21.476" y1="25.323" x2="22.5552" y2="24.2438" width="0.7112" layer="1"/>
+<wire x1="22.5552" y1="24.2438" x2="22.5552" y2="24.0792" width="0.7112" layer="1"/>
 </signal>
 <signal name="SWD_CLK">
 <contactref element="U1" pad="27"/>
@@ -2058,21 +2073,23 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$48">
 <contactref element="C13" pad="1"/>
-<contactref element="L1" pad="1"/>
 <contactref element="U1" pad="12"/>
-<wire x1="2.74" y1="21.28" x2="2.74" y2="24.04" width="0.7112" layer="1"/>
 <wire x1="2.74" y1="24.04" x2="2.76" y2="24.06" width="0.7112" layer="1"/>
 <wire x1="9.76" y1="24.04" x2="2.78" y2="24.04" width="0.2032" layer="1"/>
 <wire x1="2.78" y1="24.04" x2="2.76" y2="24.06" width="0.2032" layer="1"/>
+<contactref element="U$1" pad="P$1"/>
+<wire x1="2.6162" y1="21.3692" x2="2.6162" y2="23.9162" width="0.5588" layer="1"/>
+<wire x1="2.6162" y1="23.9162" x2="2.76" y2="24.06" width="0.5588" layer="1"/>
 </signal>
 <signal name="N$49">
 <contactref element="C14" pad="1"/>
-<contactref element="L2" pad="1"/>
-<contactref element="L1" pad="2"/>
-<wire x1="2.5" y1="11.95" x2="2.5" y2="14.66" width="0.7112" layer="1"/>
 <wire x1="2.5" y1="14.66" x2="2.56" y2="14.72" width="0.7112" layer="1"/>
-<wire x1="2.56" y1="14.72" x2="2.56" y2="17.2" width="0.7112" layer="1"/>
-<wire x1="2.56" y1="17.2" x2="2.74" y2="17.38" width="0.7112" layer="1"/>
+<contactref element="U$1" pad="P$2"/>
+<contactref element="U$8" pad="P$1"/>
+<wire x1="2.5" y1="14.66" x2="2.5" y2="19.053" width="0.5588" layer="1"/>
+<wire x1="2.5" y1="19.053" x2="2.6162" y2="19.1692" width="0.5588" layer="1"/>
+<wire x1="2.56" y1="14.72" x2="2.56" y2="11.8896" width="0.5588" layer="1"/>
+<wire x1="2.56" y1="11.8896" x2="2.0828" y2="11.4124" width="0.5588" layer="1"/>
 </signal>
 <signal name="LED_RED">
 <contactref element="R1" pad="2"/>
@@ -2116,9 +2133,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$4">
 <contactref element="U$4" pad="P$1"/>
-<contactref element="L2" pad="2"/>
-<wire x1="1.8" y1="6.15" x2="1.8" y2="7.35" width="0.5588" layer="1"/>
-<wire x1="1.8" y1="7.35" x2="2.5" y2="8.05" width="0.5588" layer="1"/>
+<contactref element="U$8" pad="P$2"/>
+<wire x1="2.0828" y1="9.2124" x2="1.8" y2="8.9296" width="0.5588" layer="1"/>
+<wire x1="1.8" y1="8.9296" x2="1.8" y2="6.15" width="0.5588" layer="1"/>
 </signal>
 <signal name="GANT1">
 <contactref element="U1" pad="11"/>
@@ -2179,13 +2196,9 @@ design rules under a new name.</description>
 <wire x1="12.51" y1="33.1" x2="12.54" y2="33.13" width="0.4572" layer="1"/>
 <wire x1="12.54" y1="33.13" x2="14.08" y2="33.13" width="0.4572" layer="1"/>
 <wire x1="14.08" y1="33.13" x2="14.224" y2="33.274" width="0.4572" layer="1"/>
-<via x="18.415" y="25.527" extent="1-16" drill="0.6096"/>
-<wire x1="20.176" y1="25.323" x2="18.619" y2="25.323" width="0.4572" layer="1"/>
-<wire x1="18.619" y1="25.323" x2="18.415" y2="25.527" width="0.4572" layer="1"/>
-<wire x1="19.16" y1="23.61" x2="19.16" y2="24.782" width="0.4572" layer="1"/>
-<wire x1="19.16" y1="24.782" x2="18.415" y2="25.527" width="0.4572" layer="1"/>
+<via x="18.669" y="25.8826" extent="1-16" drill="0.6096"/>
 <wire x1="16.76" y1="26.04" x2="17.902" y2="26.04" width="0.2032" layer="1"/>
-<wire x1="17.902" y1="26.04" x2="18.415" y2="25.527" width="0.2032" layer="1"/>
+<wire x1="17.902" y1="26.04" x2="18.669" y2="25.8826" width="0.2032" layer="1"/>
 <contactref element="U$5" pad="P$2"/>
 <contactref element="U$6" pad="P$2"/>
 <via x="26.035" y="33.401" extent="1-16" drill="0.6096"/>
@@ -2220,6 +2233,11 @@ design rules under a new name.</description>
 <wire x1="14.1732" y1="20.7132" x2="14.1732" y2="20.7518" width="0.508" layer="1"/>
 <wire x1="13.86" y1="22.34" x2="13.86" y2="21.065" width="0.2032" layer="1"/>
 <wire x1="13.86" y1="21.065" x2="14.1732" y2="20.7518" width="0.2032" layer="1"/>
+<wire x1="18.669" y1="25.8826" x2="19.0627" y2="25.4889" width="0.2032" layer="1"/>
+<wire x1="19.0627" y1="25.4889" x2="19.2286" y2="25.323" width="0.2032" layer="1"/>
+<wire x1="19.2286" y1="25.323" x2="20.176" y2="25.323" width="0.2032" layer="1"/>
+<wire x1="19.6426" y1="23.7116" x2="19.6426" y2="24.909" width="0.2032" layer="1"/>
+<wire x1="19.6426" y1="24.909" x2="19.2286" y2="25.323" width="0.2032" layer="1"/>
 </signal>
 <signal name="XRST">
 <contactref element="U1" pad="4"/>
@@ -2235,9 +2253,28 @@ design rules under a new name.</description>
 </signal>
 <signal name="UART_RX">
 <contactref element="U1" pad="34"/>
+<contactref element="TP2" pad="TP"/>
+<wire x1="16.76" y1="25.24" x2="17.7114" y2="25.24" width="0.2032" layer="1"/>
+<wire x1="17.7114" y1="25.24" x2="18.288" y2="24.6634" width="0.2032" layer="1"/>
+<wire x1="18.288" y1="24.6634" x2="18.288" y2="23.4696" width="0.2032" layer="1"/>
+<wire x1="18.288" y1="23.4696" x2="19.431" y2="22.3266" width="0.2032" layer="1"/>
+<wire x1="19.431" y1="22.3266" x2="19.431" y2="20.9804" width="0.2032" layer="1"/>
+<wire x1="19.431" y1="20.9804" x2="20.3454" y2="20.066" width="0.2032" layer="1"/>
+<wire x1="20.3454" y1="20.066" x2="21.5392" y2="20.066" width="0.2032" layer="1"/>
+<wire x1="21.5392" y1="20.066" x2="24.257" y2="17.3482" width="0.2032" layer="1"/>
 </signal>
 <signal name="UART_TX">
 <contactref element="U1" pad="33"/>
+<contactref element="TP1" pad="TP"/>
+<wire x1="16.76" y1="24.84" x2="17.4002" y2="24.84" width="0.2032" layer="1"/>
+<wire x1="17.4002" y1="24.84" x2="17.7546" y2="24.4856" width="0.2032" layer="1"/>
+<wire x1="17.7546" y1="24.4856" x2="17.7546" y2="23.368" width="0.2032" layer="1"/>
+<wire x1="17.7546" y1="23.368" x2="18.923" y2="22.1996" width="0.2032" layer="1"/>
+<wire x1="18.923" y1="22.1996" x2="18.923" y2="20.7772" width="0.2032" layer="1"/>
+<wire x1="18.923" y1="20.7772" x2="20.1168" y2="19.5834" width="0.2032" layer="1"/>
+<wire x1="20.1168" y1="19.5834" x2="21.1328" y2="19.5834" width="0.2032" layer="1"/>
+<wire x1="21.1328" y1="19.5834" x2="22.225" y2="18.4912" width="0.2032" layer="1"/>
+<wire x1="22.225" y1="18.4912" x2="22.225" y2="17.2212" width="0.2032" layer="1"/>
 </signal>
 <signal name="SWD_IO">
 <contactref element="U1" pad="26"/>
@@ -2265,7 +2302,7 @@ design rules under a new name.</description>
 <signal name="N$5">
 <contactref element="R3" pad="2"/>
 <contactref element="T1" pad="2"/>
-<wire x1="21.3568" y1="21.6672" x2="25.3" y2="21.21" width="0.7112" layer="1"/>
+<wire x1="20.4932" y1="21.464" x2="25.3" y2="21.21" width="0.7112" layer="1"/>
 <wire x1="25.3" y1="21.21" x2="25.32" y2="21.19" width="0.7112" layer="1"/>
 </signal>
 <signal name="AC_MAINS_+_PRE">
@@ -2283,9 +2320,8 @@ design rules under a new name.</description>
 <signal name="RELAY_DRIVE">
 <contactref element="R3" pad="1"/>
 <contactref element="U1" pad="29"/>
-<wire x1="16.99" y1="23.24" x2="17.244" y2="23.24" width="0.2032" layer="1"/>
-<wire x1="17.244" y1="23.24" x2="18.8168" y2="21.6672" width="0.2032" layer="1"/>
-<wire x1="16.99" y1="23.24" x2="16.76" y2="23.24" width="0" layer="19" extent="1-1"/>
+<wire x1="16.76" y1="23.24" x2="17.9532" y2="22.0468" width="0.2032" layer="1"/>
+<wire x1="17.9532" y1="22.0468" x2="17.9532" y2="21.464" width="0.2032" layer="1"/>
 </signal>
 <signal name="AC_MAINS_GND">
 <via x="31.6992" y="19.1516" extent="1-16" drill="1.6002"/>
